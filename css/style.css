@@ -13,11 +13,6 @@ body {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
-
 .btn {
     border: none;
     border-radius: 6px;
@@ -49,6 +44,8 @@ section {
 .btn-green {
     background-color: hsl(154, 59%, 51%);
     margin-bottom: 1rem;
+    font-weight: 500;
+    box-shadow: 0 3.2px hsl(154, 57%, 42%);
 }
 
 .btn-green:hover {
@@ -90,6 +87,7 @@ section {
 section {
     margin: 12vh 10vw;
     display: flex;
+    flex-direction: row;
 }
 
 .title {
@@ -104,4 +102,34 @@ section {
 #form-div, #text-div {
     flex: 1;
     align-self: center;
+}
+
+@media screen and (max-width: 1080px) {
+
+    section {
+        margin: 12vh 5vw;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    
+    section {
+        margin: 12vh 5vw;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: x-large;
+    }
+
+    #text-div {
+        text-align: center;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
 }
