@@ -89,6 +89,7 @@ section {
 
 section {
     margin: 12vh 10vw;
+    display: flex;
 }
 
 .title {
@@ -101,6 +102,6 @@ section {
 }
 
 #form-div, #text-div {
-    width: 50%;
+    flex: 1;
     align-self: center;
 }
