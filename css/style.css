@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+.btn-blue {
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.btn-blue:hover {
+    background-color: hsla(248, 32%, 49%, 0.8);
+}
+
+.btn-green {
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 1rem;
+}
+
+.btn-green:hover {
+    background-color: hsla(154, 59%, 51%, 0.8);
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.input {
+    border-radius: 6px;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+}
+
+.input:focus {
+    outline: none;
+    border:1px solid hsl(248, 32%, 49%);
+}
+
+.text-grayish-blue {
+    color: hsl(246, 25%, 77%);
+}
+
+.text-red {
+    color: hsl(0, 100%, 74%);
+}
+
+section {
+    margin: 12vh 10vw;
+}
+
+.title {
+    font-size: xxx-large;
+    margin-bottom: 25px;
+}
+
+.text-small {
+    font-size: x-small;
+}
+
+#form-div, #text-div {
+    width: 50%;
+    align-self: center;
+}
