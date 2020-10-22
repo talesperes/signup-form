@@ -2,6 +2,10 @@
 
 ![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
 
+## Acessar projeto
+
+https://signup-form-phi.vercel.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
