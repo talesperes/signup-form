@@ -26,24 +26,39 @@
 
       <div id="form-div">
 
-        <button class="btn btn-blue">
+        <div class="card-blue">
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
-        </button>
+        </div>
 
         <div class="card">
+          
+          <form action="#">
 
-          <form>
+            <div class="input-group">
+              <input aria-label="First Name" id="firstName" name="firstName" class="input" type="text" placeholder="First Name">
+              <span class="alert"><em>First Name cannot be empty</em></span><br>
+            </div>
 
-            <input class="input" type="text" placeholder="First Name"><br>
-            <input class="input" type="text" placeholder="Last Name"><br>
-            <input class="input" type="email" placeholder="Email Address"><br>
-            <input class="input" type="password" placeholder="Password"><br>
+            <div class="input-group">
+              <input aria-label="Last Name" id="lastName" name="lastName" class="input" type="text" placeholder="Last Name">
+              <span class="alert"><em>Last Name cannot be empty</em></span><br>
+            </div>
+            
+            <div class="input-group">
+              <input aria-label="Email Address" id="emailAddress" name="emailAddress" class="input" type="text" placeholder="Email Address">
+              <span class="alert"><em>Looks like this is not an email</em></span><br>
+            </div>
+
+            <div class="input-group">
+              <input aria-label="Password" id="password" name="password" class="input" type="password" placeholder="Password">
+              <span class="alert"><em>Password cannot be empty</em></span><br>
+            </div>
 
             <input class="btn btn-green" type="submit" value="CLAIM YOUR FREE TRIAL">
 
           </form>
 
-          <span class="text-small text-grayish-blue">By clicking the button, you are agreeing to our <strong class="text-red" style="cursor: pointer;">Terms and Services</strong></span>
+          <span class="terms-text text-grayish-blue">By clicking the button, you are agreeing to our <strong class="text-red" style="cursor: pointer;">Terms and Services</strong></span>
 
         </div>
 
@@ -60,4 +75,5 @@
     </p>
   </footer>
 </body>
+<script src="./js/script.js"></script>
 </html>
