@@ -10,8 +10,14 @@ body {
     color: white;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
 
 .btn {
     border: none;
@@ -30,22 +36,23 @@ body {
     outline: none !important;
 }
 
-.btn-blue {
+.card-blue {
+    border-radius: 12px;
     background-color: hsl(248, 32%, 49%);
-    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
-    margin-bottom: 1.2rem;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
     margin-top: 1.2rem;
-}
-
-.btn-blue:hover {
-    background-color: hsla(248, 32%, 49%, 0.8);
+    padding: 1.2rem 2.5rem;
+    text-align: center;
 }
 
 .btn-green {
     background-color: hsl(154, 59%, 51%);
     margin-bottom: 1rem;
+    margin-top: 20px;
     font-weight: 500;
     box-shadow: 0 3.2px hsl(154, 57%, 42%);
+    font-size: 16px;
 }
 
 .btn-green:hover {
@@ -54,26 +61,51 @@ body {
 
 .card {
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 7px rgba(0, 0, 0, 0.15);
-    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2.5rem 2.5rem;
     text-align: center;
 }
 
 .input {
     border-radius: 6px;
     padding: 15px 25px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     width: 100%;
     font-weight: 600;
+    font-size: 14px;
     color: hsl(249, 10%, 26%);
 }
 
 .input:focus {
     outline: none;
     border:1px solid hsl(248, 32%, 49%);
+}
+
+.input-group {
+    text-align: right;
+}
+
+.input-alert {
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: right;
+    border: 2px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+.input-alert:focus {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.alert {
+    color: hsl(0, 100%, 74%);
+    display: none;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 .text-grayish-blue {
@@ -85,7 +117,7 @@ body {
 }
 
 section {
-    margin: 12vh 10vw;
+    margin: 13vh 10vw;
     display: flex;
     flex-direction: row;
 }
@@ -93,10 +125,12 @@ section {
 .title {
     font-size: xxx-large;
     margin-bottom: 25px;
+    line-height: 3.5rem;
 }
 
-.text-small {
+.terms-text {
     font-size: x-small;
+    font-weight: 500;
 }
 
 #form-div, #text-div {
@@ -104,24 +138,33 @@ section {
     align-self: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
 
     section {
-        margin: 12vh 5vw;
+        margin: 13vh 3vw;
         flex-direction: row;
+    }
+
+    .card {
+        padding: .5rem 1.5rem 1rem;
     }
 
 }
 
 @media screen and (max-width: 720px) {
+
+    body {
+        background-image: url('../images/bg-intro-mobile.png');
+    }
     
     section {
-        margin: 12vh 5vw;
+        margin: 13vh 5vw;
         flex-direction: column;
     }
 
     .title {
         font-size: x-large;
+        line-height: 2rem;
     }
 
     #text-div {
@@ -129,7 +172,7 @@ section {
     }
 
     .card {
-        padding: 1.5rem;
+        padding: .5rem 1.5rem 1rem;
     }
 
 }
